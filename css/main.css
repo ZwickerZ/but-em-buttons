@@ -1,28 +1,15 @@
 html {
-  box-sizing: border-box;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
+  font-family: "Ubuntu Condensed", sans-serif;
 }
 
 body {
-  font-family: "Ubuntu Condensed", sans-serif;
+  height: 100px;
   color: #fff;
   background-image: url("../images/starfield.png");
 }
 
-.banner {
-  position: relative;
-  top: 18em;
-}
-
 .banner-text {
-  text-shadow: 1px 1px 20px rgba(180, 255, 244, .2);
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, .7);
 }
 
 .icon {
@@ -30,8 +17,35 @@ body {
   background-image: url("../images/rocket.svg");
 }
 
-.btn {
+.btn-ghost {
   color: #b4fff4;
-  border: 3px #b4fff4 solid;
-  height: 50.72px;
+  border: 3px #90ccc3 solid;
+  border-radius: 8px;
+  height: 3em;
+
+  transition: all .3s ease;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.btn-ghost:hover .icon {
+  bottom: .25em;
+}
+
+.btn-ghost:hover {
+  background-color: rgba(180, 255, 244, .2);
+  color: #b4fff4;
+  border: 3px #90ccc3 solid;
+}
+
+.btn-ghost:active {
+  top: .5em;
+  background-color: transparent;
+}
+
+.btn-ghost:focus {
+  top: .5em;
+  border-color: #90ccc3;
+  background-color: transparent;
 }
