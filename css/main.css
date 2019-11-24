@@ -1,19 +1,37 @@
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
-
--moz-text-size-adjust: 100%;
--ms-text-size-adjust: 100%;
--webkit-text-size-adjust: 100%;
-text-size-adjust: 100%;
-
 html {
   box-sizing: border-box;
-  font-family: "Ubuntu Condensed", sans-serif;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  font-family: "Ubuntu Condensed", sans-serif;
+  color: #fff;
+  background-image: url("../images/starfield.png");
+}
+
+.banner {
+  position: relative;
+  top: 18em;
+}
+
+.banner-text {
+  text-shadow: 1px 1px 20px rgba(180, 255, 244, .2);
+}
+
+.icon {
+  display: inline-block;
+  background-image: url("../images/rocket.svg");
+}
+
+.btn {
+  color: #b4fff4;
+  border: 3px #b4fff4 solid;
+  height: 50.72px;
 }
